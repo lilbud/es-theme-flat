@@ -227,7 +227,7 @@ license:		creative commons CC-BY-NC-SA
 			<origin>0 0</origin>
 			<size>0.185 0.327</size>
 			<delay>0.0</delay>
-			<default>~/assets/default.mp4</default>
+			<default>./assets/static.mp4</default>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
 		</video>
