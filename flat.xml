@@ -26,7 +26,7 @@ license:		creative commons CC-BY-NC-SA
 
 	</view>
 
-	<view name="basic, detailed">
+	<view name="basic, detailed, grid, video">
 		
 		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
 			<color>c9c9c9</color>
@@ -71,7 +71,7 @@ license:		creative commons CC-BY-NC-SA
 
 	<view name="basic">
 
-		<image name="background" extra="true">
+		<image name="background">
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<size>1 1</size>
@@ -79,10 +79,20 @@ license:		creative commons CC-BY-NC-SA
 		</image>
 
 	</view>
-
-	<view name="detailed">	
+	
+		<view name="detailed">
 		
-		<image name="background" extra="true">
+		<image name="md_image">
+			<pos>0.254 0.202</pos>
+			<maxSize>0.185 0.327</maxSize>
+			<origin>0 0</origin>
+		</image>
+	
+	</view>
+
+	<view name="detailed, video">	
+		
+		<image name="background">
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<size>1 1</size>
@@ -179,13 +189,50 @@ license:		creative commons CC-BY-NC-SA
 			<filledPath>./assets/star_filled_spacing.svg</filledPath>
 			<unfilledPath>./assets/star_hollow_3_spacing.svg</unfilledPath>
 		</rating>
-		
-		<image name="md_image">
-			<pos>0.254 0.202</pos>
-			<maxSize>0.185 0.327</maxSize>
-			<origin>0 0</origin>
-		</image>
 	
 	</view>
+	
+<feature supported="carousel">
+  
+  <view name="system">
+
+    <carousel name="systemcarousel">
+      <pos>0 0.42</pos> <!-- Currently only y value is used -->
+      <size>1 0.2325</size> <!-- currently only height value is used -->
+      <color>ffffff</color>
+      <logoScale>1.5</logoScale>
+      <logoSize>0.125 0.155</logoSize>
+      <maxLogoCount>5</maxLogoCount>
+    </carousel>
+
+    <infobar name="infobar">
+      <color>dddddd00</color>
+      <fontColor>000000ff</fontColor>
+      <fontPath></fontPath>
+      <fontSize>0.035</fontSize>
+    </infobar>
+
+  </view>
+
+  </feature>
+  
+  <view name="video">
+		<image name="md_marquee">
+			<origin>0 0</origin>
+			<pos>0.745 0.01</pos>
+			<maxSize>0.25 0.14</maxSize>
+		</image>
+		<video name="md_video">
+			<pos>0.254 0.202</pos>
+			<origin>0 0</origin>
+			<size>0.185 0.327</size>
+			<delay>0.0</delay>
+			<default>~/assets/default.mp4</default>
+			<showSnapshotNoVideo>false</showSnapshotNoVideo>
+			<showSnapshotDelay>false</showSnapshotDelay>
+		</video>
+	</view>
+	
+	
 	
 </theme>
