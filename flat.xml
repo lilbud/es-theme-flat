@@ -220,7 +220,7 @@ license:		creative commons CC-BY-NC-SA
 		<image name="md_marquee">
 			<origin>0 0</origin>
 			<pos>0.745 0.01</pos>
-			<maxSize>0.25 0.14</maxSize>
+			<maxSize>0.25 0.085</maxSize>
 		</image>
 		<video name="md_video">
 			<pos>0.254 0.202</pos>
