@@ -216,7 +216,7 @@ license:		creative commons CC-BY-NC-SA
 
   </feature>
   
-  <view name="video">
+  <feature supported="video">
 		
 	  <image name="md_marquee">
 			<origin>0 0</origin>
@@ -232,8 +232,9 @@ license:		creative commons CC-BY-NC-SA
 			<default>./assets/static.mp4</default>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
-		</video>
-	</view>
+	  </video>
+	  
+	</feature>
 	
 	
 	
