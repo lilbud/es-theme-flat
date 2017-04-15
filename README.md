@@ -9,5 +9,5 @@ Thanks to Rookervik for assistance
 *SNES Detailed View*
 ![Image](http://i.imgur.com/qty1F7m.png)
 *SNES System View*
-![Image](http://i.imgur.com/3Zc5zX7.png)
+![Image](http://i.imgur.com/UiwDW6q.png)
 
