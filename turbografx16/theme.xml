@@ -17,7 +17,7 @@
 	<view name="basic, detailed, video">
 	
 		<image name="logo">
-			<path>./../assets/Nintendo.png</path>
+			<path>./../assets/Hudson.png</path>
 		</image>
 		
 		<textlist name="gamelist">
@@ -25,7 +25,7 @@
 		</textlist>	
 		
 		<text name="system_name_1" extra="true">
-			<text>pc engine</text>
+			<text>Turbo-grafx 16</text>
 			<forceUppercase>1</forceUppercase>
 			<size>0.743 0.085</size>
 			<pos>0.192 0.019</pos>

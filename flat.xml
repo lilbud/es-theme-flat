@@ -12,12 +12,20 @@ license:		creative commons CC-BY-NC-SA
 	<view name="system">
 
 		<image name="background" extra="true">
-			<tile>true</tile>
+			<tile>false</tile>
 			<pos>0 0</pos>
 			<origin>0 0</origin>
 			<size>1 1</size>
-			<path>./assets/box.png</path>
+			<path>./assets/bg.png</path>
 		</image>
+		
+		<!--<image name="Overlay_System" extra="true">
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+			<path>./assets/overlay_system.png</path>
+		</image>-->
 
 		<helpsystem name="help">
 			<textColor>ffffff</textColor>
@@ -181,7 +189,6 @@ license:		creative commons CC-BY-NC-SA
 			<size>0.423 0.6</size>
 			<alignment>left</alignment>
 			<horizontalMargin>0.01</horizontalMargin>
-			<scrollSound>./assets/listscroll.wav</scrollSound>
 		</textlist>	
 		
 		<rating name="md_rating">
@@ -198,27 +205,28 @@ license:		creative commons CC-BY-NC-SA
   <view name="system">
 
     <carousel name="systemcarousel">
-      <pos>0 0.42</pos> <!-- Currently only y value is used -->
-      <size>1 0.2325</size> <!-- currently only height value is used -->
-      <color>ffffff</color>
-      <logoScale>1.5</logoScale>
+      <type>vertical</type>
+	  <pos>0 0</pos> <!-- Currently only y value is used -->
+      <size>.3 1</size> <!-- currently only height value is used -->
+      <color>00000060</color>
+      <logoScale>2</logoScale>
       <logoSize>0.125 0.155</logoSize>
       <maxLogoCount>5</maxLogoCount>
     </carousel>
 
-    <infobar name="infobar">
-      <color>dddddd00</color>
-      <fontColor>000000ff</fontColor>
+    <text name="systemInfo">
+      <backgroundColor>dddddd00</backgroundColor>
+      <color>00000000</color>
       <fontPath></fontPath>
       <fontSize>0.035</fontSize>
-    </infobar>
+    </text>
 
   </view>
 
-  </feature>
+ </feature>
   
-  <feature supported="video">
-    <view name="video">			
+  <view name="video">
+		
 	  <image name="md_marquee">
 			<origin>0 0</origin>
 			<pos>0.800 0.01</pos>
@@ -233,10 +241,9 @@ license:		creative commons CC-BY-NC-SA
 			<default>./assets/static.mp4</default>
 			<showSnapshotNoVideo>false</showSnapshotNoVideo>
 			<showSnapshotDelay>false</showSnapshotDelay>
-	  </video>
-	   </view>	  
-	</feature>
+		</video>
+	</view>
 	
 	
-
+	
 </theme>
